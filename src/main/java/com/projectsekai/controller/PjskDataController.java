@@ -21,6 +21,13 @@ public class PjskDataController {
     @Resource
     public PjskCardService pjskCardService;
 
+    /**
+     * @param
+     * @return void
+     * @Author XinlindeYu
+     * @description 卡牌数据
+     * @Date 下午 2:50 2021/6/24 0024
+     **/
     @RequestMapping(value = "/card.do", method = RequestMethod.GET)
     @ResponseBody
     public void cardData() {

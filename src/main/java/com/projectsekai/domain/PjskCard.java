@@ -10,9 +10,11 @@ import java.util.List;
  * @date 2021/6/22 0022 下午 5:06
  **/
 public class PjskCard {
-    private int id;
+    private String id;
+    private int jsonId;
     private int seq;
     private int characterId;
+    private String characterName;
     private int rarity;
     private int specialTrainingPower1BonusFixed;
     private int specialTrainingPower2BonusFixed;
@@ -26,14 +28,39 @@ public class PjskCard {
     private String gachaPhrase;
     private String flavorText;
     private long releaseAt;
+    private String releaseAtDate;
     private List<PjskCardParameter> cardParameters;
 
-    public int getId() {
+    public String getCharacterName() {
+        return characterName;
+    }
+
+    public void setCharacterName(String characterName) {
+        this.characterName = characterName;
+    }
+
+    public String getReleaseAtDate() {
+        return releaseAtDate;
+    }
+
+    public void setReleaseAtDate(String releaseAtDate) {
+        this.releaseAtDate = releaseAtDate;
+    }
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public int getJsonId() {
+        return jsonId;
+    }
+
+    public void setJsonId(int jsonId) {
+        this.jsonId = jsonId;
     }
 
     public int getSeq() {

@@ -8,18 +8,36 @@ package com.projectsekai.domain;
  * @date 2021/6/22 0022 下午 5:08
  **/
 public class PjskCardParameter {
-    private int id;
+    private String id;
+    private int jsonId;
     private int cardId;
+    private String cardPrimaryKey;
     private int cardLevel;
     private String cardParameterType;
     private int power;
 
-    public int getId() {
+    public String getCardPrimaryKey() {
+        return cardPrimaryKey;
+    }
+
+    public void setCardPrimaryKey(String cardPrimaryKey) {
+        this.cardPrimaryKey = cardPrimaryKey;
+    }
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public int getJsonId() {
+        return jsonId;
+    }
+
+    public void setJsonId(int jsonId) {
+        this.jsonId = jsonId;
     }
 
     public int getCardId() {
